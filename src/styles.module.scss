@@ -1,0 +1,26 @@
+.calendarWrapper {
+  display: flex;
+  margin: 40px;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 600px;
+  height: auto;
+  border: 1px #a0a0a0 solid;
+}
+
+.button {
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.text {
+  font-size: 14px;
+  display: inline;
+  padding: 0 5px;
+}
+

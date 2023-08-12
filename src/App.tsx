@@ -1,17 +1,16 @@
 import React from 'react';
+import styles from './styles.module.scss';
 
-//@ts-ignore
-import styles from './styled.module.scss';
-import Form from './components/Form';
-import UsersList from './components/UsersList';
-import ResultItems from './components/ResultItems';
+import Form from './components/form/Form';
+import PersonsList from './components/personsList/PersonsList';
+import Result from './components/result/Result';
 
 function App() {
   return (
-    <div className={styles.calculatorWrapper}>
+    <div className={styles.calendarWrapper}>
       <Form />
-      <UsersList />
-      <ResultItems />
+      <PersonsList />
+      <Result />
     </div>
   );
 

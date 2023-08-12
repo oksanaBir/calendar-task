@@ -1,20 +1,9 @@
+import { IPerson, IResultDate } from '../types';
+
 export const ADD_PERSON = 'ADD_PERSON';
 export const REMOVE_PERSON = 'REMOVE_PERSON';
-
 export const ADD_DATES = 'ADD_DATES';
-
-export const COUNT_RESULT_DATES = 'COUNT_RESULT_DATES';
-
-export interface IPerson {
-  id?: string,
-  name?: string;
-  dates?: any[];
-}
-
-export interface IResultDate {
-  date: string;
-  names: string[];
-}
+export const SORT_RESULT_DATES = 'SORT_RESULT_DATES';
 
 export interface IAddPersonAction {
   readonly type: typeof ADD_PERSON;
@@ -33,8 +22,8 @@ export interface IAddDatesAction {
 }
 
 export interface ICountResultDatesAction {
-  readonly type: typeof COUNT_RESULT_DATES;
-  dates: IResultDate;
+  readonly type: typeof SORT_RESULT_DATES;
+  dates: Array<IResultDate>;
 }
 
 export type TConstructorActions =
