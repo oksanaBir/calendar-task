@@ -25,7 +25,7 @@ function PersonItem(
 
   return (
     <div>
-      <button className={generalStyles.button} onClick={() => toggleOpen}>
+      <button className={generalStyles.button} onClick={toggleOpen}>
         <CalendarFilled />
       </button>
       <div className={generalStyles.text}>
