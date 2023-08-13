@@ -42,7 +42,6 @@ export const datesReducer = (
       };
     }
     case ADD_DATES: {
-      console.log(state.persons);
       return {
         ...state,
         persons: state.persons.map((person: any) =>
