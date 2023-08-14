@@ -8,7 +8,7 @@ import { CalendarFilled, CloseOutlined } from '@ant-design/icons';
 
 interface IPersonItemProps {
   person: {id: string; name: string};
-  dateValue: any;
+  dateValue: string | Date;
   handleAddDate: (e: any) => void;
   handleRemove: (e: any) => void;
 }

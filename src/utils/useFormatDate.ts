@@ -1,5 +1,5 @@
 // Преобразование даты в формат 'день и месяц', например, '15 марта'
-function setFormatDate(dateString: string | number | Date) {
+function setFormatDate(dateString: string | Date) {
   const date = new Date(dateString);
   const day = date.getDate();
   const monthIndex = date.getMonth();

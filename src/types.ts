@@ -1,7 +1,7 @@
 export interface IPerson {
   id: string,
   name: string;
-  dates: string[] | Date[];
+  dates: string[] | Date[] | any;
 }
 
 export interface IResultDate {
