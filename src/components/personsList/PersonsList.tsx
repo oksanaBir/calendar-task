@@ -15,6 +15,23 @@ function PersonsList() {
 
   const [resultNames, setResultNames] = useState<{ id: string; name: string; }[]>([]);
 
+  // Альтернативный вариант создания массива для списка дат без использования редакса
+
+  // const result: { date: string; names:{ id: string; name: string; }[]; }[] = [];
+
+  //  persons.forEach(({ id, name, dates } : IPerson) => {
+  //   dates.forEach((dateString: string | Date) => {
+  //     const formattedDate = setFormatDate(dateString);
+  //     const existingItem = result.find(item => item.date === formattedDate);
+  //     if (existingItem) {
+  //       existingItem.names.push({ id, name });
+  //     } else {
+  //       result.push({ date: formattedDate, names: [{ id, name }] });
+  //     }
+  //   });
+  // });
+
+
   // объект в формате {date: '17 августа', names: Array(0)}
   // для проверки первый участник на выбранную дату или нет
   const dateForNamesCheck = resultDates.find((element: IResultDate) => element.date === setFormatDate(dateValue.date));
